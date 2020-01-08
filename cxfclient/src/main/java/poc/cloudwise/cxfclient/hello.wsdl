@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://impl.service.cloudwise.poc/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://service.cloudwise.poc/" name="HelloServiceImplService" targetNamespace="http://impl.service.cloudwise.poc/">
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="HelloServiceImplService" targetNamespace="http://impl.service.cloudwise.poc/" xmlns:ns1="http://service.cloudwise.poc/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://impl.service.cloudwise.poc/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <wsdl:import location="http://10.0.7.82:8080/cxfserver/ws/soap/hello?wsdl=HelloService.wsdl" namespace="http://service.cloudwise.poc/">
     </wsdl:import>
   <wsdl:binding name="HelloServiceImplServiceSoapBinding" type="ns1:HelloService">
