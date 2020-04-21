@@ -1,3 +1,14 @@
+## 部署
+这俩项目cxfserver和cxfclient都需要部署在Tomcat中  
+1. 需要先启动 cxfserver
+2. 然后配置 cxfclient 的config.properties中的wsdlUrl.say=cxfserver对应的wsdlUrl  
+  获取wsdlUrl:  
+  启动cxfserver后,访问http://localhost:8080/cxfserver/ws  
+  然后点击那个service的WSDL,浏览器会跳转到一个页面,这个页面的URL就是我们要的properties中的wsdlUrl
+3. 前端访问: http://localhost:8080/cxfclient/index
+
+
+## 项目说明
 spring.version:3.0.5.RELEASE + cxf.version:2.4.2  
 
 需注意: 
@@ -8,6 +19,7 @@ cxf.version2.X 需要再spring-context.xml中引入这仨哥们(cxf3.x中不需�
 <import resource="classpath:META-INF/cxf/cxf-extension-xml.xml"/>
 <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 ```
+
 参考文章:
 1. 常规使用,通过wsdl生成JAVA代码调用
 https://blog.csdn.net/baibinboss/article/details/67637455
